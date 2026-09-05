@@ -76,7 +76,9 @@ Architecture / Workflow
           │                   ▼
           └────────────► Amazon Linux 2023
 
-Infrastructure Lifecycle
+---
+
+## Infrastructure Lifecycle
 terraform init
       │
       ▼
@@ -99,16 +101,18 @@ terraform destroy
       │
       ▼
 EC2 Instance Removed
+---
 
-Project Structure
+## Project Structure
 terraform-aws-ec2/
 │
 ├── main.tf                  # Terraform infrastructure configuration
 ├── README.md                # Project documentation
 ├── .gitignore               # Prevents Terraform state files from being committed
 └── .terraform.lock.hcl      # Terraform provider dependency lock file
+---
 
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 Before running this project, install and configure:
 
@@ -126,7 +130,9 @@ aws configure
 Verify AWS authentication:
 
 aws sts get-caller-identity
-🚀 Deployment
+---
+
+## 🚀 Deployment
 1. Initialize Terraform
 
 Initialize the Terraform working directory and download the required AWS provider:
